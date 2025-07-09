@@ -12,6 +12,7 @@
       "minecraft:forest": "2025-06-26 20:58:30 +0000",
       "minecraft:taiga": "2025-06-26 21:28:46 +0000",
       "minecraft:deep_cold_ocean": "2025-06-29 20:34:12 +0000",
+      "minecraft:ice_spikes": "2025-07-08 21:31:34 +0000",
       "minecraft:desert": "2025-07-04 23:02:30 +0000",
       "minecraft:frozen_river": "2025-07-04 22:45:33 +0000",
       "minecraft:sunflower_plains": "2025-06-26 21:06:29 +0000",
@@ -839,10 +840,12 @@
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:skeleton": "2025-06-26 21:25:06 +0000",
+      "minecraft:enderman": "2025-07-08 21:39:57 +0000",
       "minecraft:witch": "2025-07-04 12:14:19 +0000",
       "minecraft:spider": "2025-06-26 21:27:41 +0000",
       "minecraft:zombie": "2025-06-26 21:33:36 +0000",
-      "minecraft:creeper": "2025-06-26 22:11:08 +0000"
+      "minecraft:creeper": "2025-06-26 22:11:08 +0000",
+      "minecraft:zombie_villager": "2025-07-08 23:36:05 +0000"
     },
     "done": false
   },
@@ -7242,6 +7245,24 @@
   "minecraft:story/enchant_item": {
     "criteria": {
       "enchanted_item": "2025-07-04 22:10:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/follow_ender_eye": {
+    "criteria": {
+      "in_stronghold": "2025-07-08 21:34:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:end/root": {
+    "criteria": {
+      "entered_end": "2025-07-08 21:46:36 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/enter_the_end": {
+    "criteria": {
+      "entered_end": "2025-07-08 21:46:36 +0000"
     },
     "done": true
   },
