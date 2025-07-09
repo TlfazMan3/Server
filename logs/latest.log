@@ -1,21 +1,839 @@
-[00:09:46] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> -800 2300
-[00:09:57] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> -100 285
-[00:34:56] [Server thread/INFO]: Tlfaz_Man lost connection: Disconnected
-[00:34:56] [Server thread/INFO]: Tlfaz_Man left the game
-[00:34:56] [Server thread/INFO]: [voicechat] Disconnecting client Tlfaz_Man
-[00:34:56] [Server thread/INFO]: 3mkbody lost connection: Disconnected
-[00:34:56] [Server thread/INFO]: 3mkbody left the game
-[00:34:56] [Server thread/INFO]: [voicechat] Disconnecting client 3mkbody
-[00:36:17] [Server thread/INFO]: Unknown or incomplete command, see below for error
-[00:36:17] [Server thread/INFO]: http://2.tcp.eu.ngrok.io:17514<--[HERE]
-[00:36:18] [Server thread/INFO]: Stopping the server
-[00:36:18] [Server thread/INFO]: Stopping server
-[00:36:18] [Server thread/INFO]: Saving players
-[00:36:18] [Server thread/INFO]: Saving worlds
-[00:36:19] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[00:36:19] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[00:36:19] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[00:36:19] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[00:36:19] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[00:36:19] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[00:36:19] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[10:40:53] [main/INFO]: Loading Minecraft 1.20.4 with Fabric Loader 0.16.14
+[10:40:54] [main/WARN]: Warnings were found!
+ - Mod 'TPS Hud' (tpshud) 1.7.0+1.20.3 recommends version 4.0.0 or later of modmenu, which is missing!
+	 - You should install version 4.0.0 or later of modmenu for the optimal experience.
+ - Mod 'TPS Hud' (tpshud) 1.7.0+1.20.3 recommends any version of yet-another-config-lib, which is missing!
+	 - You should install any version of yet-another-config-lib for the optimal experience.
+[10:40:54] [main/INFO]: Loading 96 mods:
+	- c2me 0.2.0+alpha.11.72
+	   |-- c2me-base 0.2.0+alpha.11.72
+	   |-- c2me-client-uncapvd 0.2.0+alpha.11.72
+	   |-- c2me-fixes-chunkio-threading-issues 0.2.0+alpha.11.72
+	   |-- c2me-fixes-general-threading-issues 0.2.0+alpha.11.72
+	   |-- c2me-fixes-worldgen-threading-issues 0.2.0+alpha.11.72
+	   |-- c2me-fixes-worldgen-vanilla-bugs 0.2.0+alpha.11.72
+	   |-- c2me-notickvd 0.2.0+alpha.11.72
+	   |-- c2me-opts-allocs 0.2.0+alpha.11.72
+	   |-- c2me-opts-chunk-access 0.2.0+alpha.11.72
+	   |-- c2me-opts-chunkio 0.2.0+alpha.11.72
+	   |-- c2me-opts-math 0.2.0+alpha.11.72
+	   |-- c2me-opts-scheduling 0.2.0+alpha.11.72
+	   |-- c2me-opts-worldgen-general 0.2.0+alpha.11.72
+	   |-- c2me-opts-worldgen-vanilla 0.2.0+alpha.11.72
+	   |-- c2me-rewrites-chunk-serializer 0.2.0+alpha.11.72
+	   |-- c2me-rewrites-chunkio 0.2.0+alpha.11.72
+	   |-- c2me-server-utils 0.2.0+alpha.11.72
+	   |-- c2me-threading-chunkio 0.2.0+alpha.11.72
+	   |-- c2me-threading-lighting 0.2.0+alpha.11.72
+	   |-- c2me-threading-worldgen 0.2.0+alpha.11.72
+	   |-- com_electronwill_night-config_core 3.6.5
+	   |-- com_electronwill_night-config_toml 3.6.5
+	   |-- com_ibm_async_asyncutil 0.1.0
+	   |-- net_objecthunter_exp4j 0.4.8
+	   \-- org_threadly_threadly 7.0
+	- carpet 1.4.128+v231205
+	- chunky 1.3.146
+	- fabric-api 0.97.3+1.20.4
+	   |-- fabric-api-base 0.4.37+78d798af4f
+	   |-- fabric-api-lookup-api-v1 1.6.50+82b1bb3e4f
+	   |-- fabric-biome-api-v1 13.0.17+78d798af4f
+	   |-- fabric-block-api-v1 1.0.17+3e2216cb4f
+	   |-- fabric-block-view-api-v2 1.0.5+78d798af4f
+	   |-- fabric-blockrenderlayer-v1 1.1.47+78d798af4f
+	   |-- fabric-client-tags-api-v1 1.1.8+78d798af4f
+	   |-- fabric-command-api-v1 1.2.42+f71b366f4f
+	   |-- fabric-command-api-v2 2.2.21+78d798af4f
+	   |-- fabric-commands-v0 0.2.59+df3654b34f
+	   |-- fabric-containers-v0 0.1.88+df3654b34f
+	   |-- fabric-content-registries-v0 5.0.16+78d798af4f
+	   |-- fabric-convention-tags-v1 1.5.11+78d798af4f
+	   |-- fabric-crash-report-info-v1 0.2.24+78d798af4f
+	   |-- fabric-data-attachment-api-v1 1.1.5+b90db5744f
+	   |-- fabric-data-generation-api-v1 13.2.6+5c0133444f
+	   |-- fabric-dimensions-v1 2.1.63+6605d1a84f
+	   |-- fabric-entity-events-v1 1.6.2+09fc25014f
+	   |-- fabric-events-interaction-v0 0.7.2+389931eb4f
+	   |-- fabric-events-lifecycle-v0 0.2.76+df3654b34f
+	   |-- fabric-game-rule-api-v1 1.0.47+78d798af4f
+	   |-- fabric-item-api-v1 2.3.1+cadc140c4f
+	   |-- fabric-item-group-api-v1 4.0.27+ee30b13a4f
+	   |-- fabric-key-binding-api-v1 1.0.42+78d798af4f
+	   |-- fabric-keybindings-v0 0.2.40+df3654b34f
+	   |-- fabric-lifecycle-events-v1 2.3.1+a67ffb5d4f
+	   |-- fabric-loot-api-v2 2.1.10+78d798af4f
+	   |-- fabric-message-api-v1 6.0.6+78d798af4f
+	   |-- fabric-mining-level-api-v1 2.1.66+78d798af4f
+	   |-- fabric-model-loading-api-v1 1.0.9+78d798af4f
+	   |-- fabric-models-v0 0.4.8+9386d8a74f
+	   |-- fabric-networking-api-v1 3.1.9+6abb6a4b4f
+	   |-- fabric-object-builder-api-v1 13.1.0+dba1195c4f
+	   |-- fabric-particles-v1 1.1.8+78d798af4f
+	   |-- fabric-recipe-api-v1 2.0.22+78d798af4f
+	   |-- fabric-registry-sync-v0 4.0.21+ee30b13a4f
+	   |-- fabric-renderer-api-v1 3.2.5+78d798af4f
+	   |-- fabric-renderer-indigo 1.5.6+d331d3144f
+	   |-- fabric-renderer-registries-v1 3.2.54+df3654b34f
+	   |-- fabric-rendering-data-attachment-v1 0.3.43+73761d2e4f
+	   |-- fabric-rendering-fluids-v1 3.1.2+e761c6694f
+	   |-- fabric-rendering-v0 1.1.57+df3654b34f
+	   |-- fabric-rendering-v1 3.2.1+6fd945a04f
+	   |-- fabric-resource-conditions-api-v1 2.3.15+78d798af4f
+	   |-- fabric-resource-loader-v0 0.11.21+ee30b13a4f
+	   |-- fabric-screen-api-v1 2.0.18+78d798af4f
+	   |-- fabric-screen-handler-api-v1 1.3.57+78d798af4f
+	   |-- fabric-sound-api-v1 1.0.18+78d798af4f
+	   |-- fabric-transfer-api-v1 4.0.12+90f2d7b14f
+	   \-- fabric-transitive-access-wideners-v1 5.0.15+78d798af4f
+	- fabric-language-kotlin 1.13.3+kotlin.2.1.21
+	   |-- org_jetbrains_kotlin_kotlin-reflect 2.1.21
+	   |-- org_jetbrains_kotlin_kotlin-stdlib 2.1.21
+	   |-- org_jetbrains_kotlin_kotlin-stdlib-jdk7 2.1.21
+	   |-- org_jetbrains_kotlin_kotlin-stdlib-jdk8 2.1.21
+	   |-- org_jetbrains_kotlinx_atomicfu-jvm 0.27.0
+	   |-- org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm 1.10.2
+	   |-- org_jetbrains_kotlinx_kotlinx-coroutines-jdk8 1.10.2
+	   |-- org_jetbrains_kotlinx_kotlinx-datetime-jvm 0.6.2
+	   |-- org_jetbrains_kotlinx_kotlinx-io-bytestring-jvm 0.7.0
+	   |-- org_jetbrains_kotlinx_kotlinx-io-core-jvm 0.7.0
+	   |-- org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm 1.8.1
+	   |-- org_jetbrains_kotlinx_kotlinx-serialization-core-jvm 1.8.1
+	   \-- org_jetbrains_kotlinx_kotlinx-serialization-json-jvm 1.8.1
+	- fabricloader 0.16.14
+	   \-- mixinextras 0.4.1
+	- java 21
+	- lithium 0.12.1
+	- minecraft 1.20.4
+	- servercore 1.5.0+1.20.4
+	   |-- fabric-permissions-api-v0 0.3-SNAPSHOT
+	   |-- org_yaml_snakeyaml 2.2
+	   |-- placeholder-api 2.3.0+1.20.3
+	   |-- space_arim_dazzleconf_dazzleconf-core 1.3.0-M2
+	   \-- space_arim_dazzleconf_dazzleconf-ext-snakeyaml 1.3.0-M2
+	- skinrestorer 2.3.5+1.20.3-fabric
+	   \-- org_mineskin_java-client 3.0.6-SNAPSHOT
+	- spark 1.10.58
+	- tpshud 1.7.0+1.20.3
+	   \-- me_obsilabor_alert 1.0.8
+	- voicechat 1.20.4-2.5.22
+	   \-- fabric-key-binding-api-v1 1.0.39+f4b7e42432
+[10:40:54] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/workspaces/Server/libraries/net/fabricmc/sponge-mixin/0.15.5+mixin.0.8.7/sponge-mixin-0.15.5+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[10:40:54] [main/INFO]: Compatibility level set to JAVA_16
+[10:40:54] [main/INFO]: Compatibility level set to JAVA_17
+[10:40:55] [main/INFO]: Initializing com.ishland.c2me.base.mixin
+[10:40:55] [main/INFO]: Global Executor Parallelism: 1 configured, 1 evaluated, 1 default evaluated
+[10:40:55] [main/INFO]: Initializing com.ishland.c2me.fixes.chunkio.threading_issues.mixin
+[10:40:55] [main/INFO]: Initializing com.ishland.c2me.fixes.general.threading_issues.mixin
+[10:40:55] [main/INFO]: Initializing com.ishland.c2me.fixes.worldgen.threading_issues.mixin
+[10:40:55] [main/INFO]: Initializing com.ishland.c2me.fixes.worldgen.vanilla_bugs.mixin
+[10:40:55] [main/INFO]: Initializing com.ishland.c2me.notickvd.mixin
+[10:40:55] [main/INFO]: Initializing com.ishland.c2me.opts.allocs.mixin
+[10:40:55] [main/INFO]: Initializing com.ishland.c2me.opts.chunk_access.mixin
+[10:40:55] [main/INFO]: Initializing com.ishland.c2me.opts.chunkio.mixin
+[10:40:55] [main/INFO]: Initializing com.ishland.c2me.opts.math.mixin
+[10:40:55] [main/INFO]: Initializing com.ishland.c2me.opts.scheduling.mixin
+[10:40:55] [main/INFO]: Initializing com.ishland.c2me.opts.worldgen.general.mixin
+[10:40:55] [main/INFO]: Initializing com.ishland.c2me.opts.worldgen.vanilla.mixin
+[10:40:55] [main/INFO]: Initializing com.ishland.c2me.rewrites.chunk_serializer.mixin
+[10:40:55] [main/INFO]: Disabling com.ishland.c2me.rewrites.chunk_serializer.mixin
+[10:40:55] [main/INFO]: Initializing com.ishland.c2me.rewrites.chunkio.mixin
+[10:40:55] [main/INFO]: Disabling com.ishland.c2me.rewrites.chunkio.mixin
+[10:40:55] [main/INFO]: Initializing com.ishland.c2me.server.utils.mixin
+[10:40:55] [main/INFO]: Initializing com.ishland.c2me.threading.chunkio.mixin
+[10:40:55] [main/INFO]: Initializing com.ishland.c2me.threading.lighting.mixin
+[10:40:55] [main/INFO]: Initializing com.ishland.c2me.threading.worldgen.mixin
+[10:40:55] [main/INFO]: Disabling com.ishland.c2me.threading.worldgen.mixin
+[10:40:55] [main/WARN]: Mod 'c2me' attempted to override option 'mixin.world.player_chunk_tick', which doesn't exist, ignoring
+[10:40:55] [main/INFO]: Loaded configuration file for Lithium: 129 options available, 1 override(s) found
+[10:40:56] [main/WARN]: Error loading class: ca/spottedleaf/starlight/common/thread/SchedulingUtil (java.lang.ClassNotFoundException: ca/spottedleaf/starlight/common/thread/SchedulingUtil)
+[10:40:56] [main/WARN]: Force-disabling mixin 'alloc.chunk_ticking.ServerChunkManagerMixin' as rule 'mixin.alloc.chunk_ticking' (added by mods [servercore]) disables it and children
+[10:40:57] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[10:41:10] [main/INFO]: [ServerCore] Loaded V1.5.0+1.20.4!
+[10:41:11] [main/INFO]: [voicechat] Compatibility version 18
+[10:41:11] [main/INFO]: [voicechat] Loading plugins
+[10:41:11] [main/INFO]: [voicechat] Loaded 0 plugin(s)
+[10:41:11] [main/INFO]: [voicechat] Initializing plugins
+[10:41:11] [main/INFO]: [voicechat] Initialized 0 plugin(s)
+[10:41:11] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[10:41:11] [main/WARN]: Missing metadata in pack file/VanillaTweaks_d815585_UNZIP_ME.zip
+[10:41:14] [main/INFO]: Loaded 7 recipes
+[10:41:15] [main/INFO]: Loaded 1290 advancements
+[10:41:15] [main/INFO]: Applied 0 biome modifications to 0 of 64 new biomes in 1.652 ms
+[10:41:16] [Server thread/INFO]: Starting background profiler...
+[10:41:17] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[10:41:17] [Server thread/INFO]: Loading properties
+[10:41:17] [Server thread/INFO]: Default game type: SURVIVAL
+[10:41:17] [Server thread/INFO]: Generating keypair
+[10:41:17] [Server thread/INFO]: Starting Minecraft server on *:25565
+[10:41:17] [Server thread/INFO]: Using epoll channel type
+[10:41:17] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[10:41:17] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[10:41:17] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[10:41:17] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[10:41:17] [Server thread/INFO]: Preparing level "world"
+[10:41:17] [Server thread/INFO]: Enforcing safe world random access
+[10:41:24] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[10:41:24] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[10:41:24] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[10:41:25] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[10:41:25] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[10:41:26] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[10:41:26] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[10:41:27] [Server thread/INFO]: Preparing spawn area: 0%
+[10:41:27] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[10:41:28] [Worker-Main-1/INFO]: Preparing spawn area: 14%
+[10:41:28] [Worker-Main-1/INFO]: Preparing spawn area: 14%
+[10:41:29] [Worker-Main-1/INFO]: Preparing spawn area: 14%
+[10:41:29] [Worker-Main-1/INFO]: Preparing spawn area: 17%
+[10:41:30] [Worker-Main-1/INFO]: Preparing spawn area: 17%
+[10:41:30] [Worker-Main-1/INFO]: Preparing spawn area: 17%
+[10:41:31] [Worker-Main-1/INFO]: Preparing spawn area: 22%
+[10:41:31] [Worker-Main-1/INFO]: Preparing spawn area: 26%
+[10:41:32] [Worker-Main-1/INFO]: Preparing spawn area: 48%
+[10:41:32] [Worker-Main-1/INFO]: Preparing spawn area: 48%
+[10:41:33] [Worker-Main-1/INFO]: Preparing spawn area: 62%
+[10:41:33] [Server thread/INFO]: Time elapsed: 9363 ms
+[10:41:33] [Server thread/INFO]: Done (16.024s)! For help, type "help"
+[10:41:33] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
+[10:41:33] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 24454
+[10:41:33] [Server thread/INFO]: Unknown or incomplete command, see below for error
+[10:41:33] [Server thread/INFO]: java -Xmx8G -Xms4G -jar server.jar --nogui<--[HERE]
+[10:45:15] [Server thread/INFO]: 3mkbody[/[0:0:0:0:0:0:0:1%0]:58806] logged in with entity id 283 at (76.5, 67.0, 98.5)
+[10:45:15] [Server thread/INFO]: [voicechat] Using Fabric Permissions API
+[10:45:15] [Server thread/INFO]: 3mkbody joined the game
+[10:45:45] [Server thread/INFO]: 3mkbody lost connection: Timed out
+[10:45:45] [Server thread/INFO]: 3mkbody left the game
+[10:45:45] [Server thread/INFO]: [voicechat] Disconnecting client 3mkbody
+[10:45:45] [Server thread/WARN]: handleDisconnection() called twice
+[10:47:59] [Server thread/INFO]: 3mkbody[/[0:0:0:0:0:0:0:1%0]:46026] logged in with entity id 434 at (76.5, 67.0, 98.5)
+[10:47:59] [Server thread/INFO]: 3mkbody joined the game
+[10:48:59] [Server thread/INFO]: 3mkbody lost connection: Disconnected
+[10:48:59] [Server thread/INFO]: 3mkbody left the game
+[10:48:59] [Server thread/INFO]: [voicechat] Disconnecting client 3mkbody
+[10:50:02] [Thread-15/WARN]: Failed to fetch skin: no profile with uuid e4632f8c-51ef-3d5d-a204-9801251254e0
+[10:50:03] [Server thread/INFO]: Blub_14[/[0:0:0:0:0:0:0:1%0]:38562] logged in with entity id 723 at (262.69999998807907, 59.0, 257.5051382437142)
+[10:50:03] [Server thread/INFO]: Blub_14 joined the game
+[10:50:04] [Server thread/INFO]: [voicechat] Received secret request of Blub_14 (18)
+[10:50:04] [Server thread/INFO]: [voicechat] Sent secret to Blub_14
+[10:52:36] [Server thread/INFO]: 3mkbody[/[0:0:0:0:0:0:0:1%0]:42800] logged in with entity id 1636 at (62.61370969277235, 68.0, 122.69999998807907)
+[10:52:36] [Server thread/INFO]: 3mkbody joined the game
+[10:53:52] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2237ms or 44 ticks behind
+[10:53:58] [Server thread/INFO]: [Not Secure] <Blub_14> b2olk
+[10:54:21] [Server thread/INFO]: [Not Secure] <Blub_14> enta sr2t mny golden apples?
+[10:54:34] [Server thread/INFO]: [Not Secure] <3mkbody> la2222
+[10:54:48] [Server thread/INFO]: [Not Secure] <Blub_14> yahia s7?
+[10:54:49] [Server thread/INFO]: [Not Secure] <3mkbody> t3ala 5odhom
+[10:56:15] [Server thread/INFO]: [Not Secure] <Blub_14> feen?
+[10:56:22] [Server thread/INFO]: [Not Secure] <Blub_14> dol bs?
+[11:00:35] [Server thread/INFO]: Tlfaz_Man[/[0:0:0:0:0:0:0:1%0]:42782] logged in with entity id 6239 at (331.35465419519903, 86.0, 827.9217750359537)
+[11:00:35] [Server thread/INFO]: Tlfaz_Man joined the game
+[11:00:36] [Server thread/INFO]: [voicechat] Received secret request of Tlfaz_Man (18)
+[11:00:36] [Server thread/INFO]: [voicechat] Sent secret to Tlfaz_Man
+[11:09:45] [Server thread/INFO]: Tlfaz_Man lost connection: Disconnected
+[11:09:45] [Server thread/INFO]: Tlfaz_Man left the game
+[11:09:45] [Server thread/INFO]: [voicechat] Disconnecting client Tlfaz_Man
+[11:11:41] [Server thread/INFO]: Villager class_1646['Librarian'/8024, l='ServerLevel[world]', x=282.70, y=60.00, z=258.50] died, message: 'Librarian was slain by Zombie'
+[11:12:10] [Server thread/INFO]: Villager class_1646['Librarian'/7998, l='ServerLevel[world]', x=282.70, y=60.00, z=254.50] died, message: 'Librarian was slain by Zombie'
+[11:12:45] [Server thread/INFO]: Villager class_1646['Librarian'/8025, l='ServerLevel[world]', x=282.70, y=60.00, z=256.50] died, message: 'Librarian was slain by Zombie'
+[11:14:14] [Server thread/INFO]: Villager class_1646['Librarian'/7997, l='ServerLevel[world]', x=282.74, y=59.00, z=252.34] died, message: 'Librarian was slain by Zombie'
+[11:16:00] [Server thread/INFO]: Villager class_1646['Villager'/7993, l='ServerLevel[world]', x=289.30, y=60.00, z=255.50] died, message: 'Villager was slain by Zombie'
+[11:16:06] [Server thread/INFO]: Villager class_1646['Villager'/8030, l='ServerLevel[world]', x=289.30, y=60.00, z=257.49] died, message: 'Villager was slain by Zombie'
+[11:17:48] [Server thread/INFO]: Villager class_1646['Librarian'/7990, l='ServerLevel[world]', x=289.30, y=60.00, z=251.50] died, message: 'Librarian was slain by Zombie'
+[11:17:54] [Server thread/INFO]: Villager class_1646['Librarian'/7992, l='ServerLevel[world]', x=289.30, y=60.00, z=253.50] died, message: 'Librarian was slain by Zombie'
+[11:18:17] [Server thread/INFO]: Villager class_1646['Librarian'/7991, l='ServerLevel[world]', x=289.70, y=60.00, z=249.48] died, message: 'Librarian was slain by Zombie'
+[11:22:40] [Server thread/INFO]: Tlfaz_Man[/[0:0:0:0:0:0:0:1%0]:49912] logged in with entity id 17126 at (265.5, 81.5625, 687.5)
+[11:22:40] [Server thread/INFO]: Tlfaz_Man joined the game
+[11:22:41] [Server thread/INFO]: [voicechat] Received secret request of Tlfaz_Man (18)
+[11:22:41] [Server thread/INFO]: [voicechat] Sent secret to Tlfaz_Man
+[11:25:33] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> Blub_14 ana 3ayz Looting
+[11:26:17] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved wrongly! 0.3081583674728563
+[11:26:17] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved wrongly! 0.7654027889462895
+[11:26:27] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved too quickly! 8.645101916451523,3.0,-4.388690140818085
+[11:26:27] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved too quickly! 9.156553912261899,3.0,-4.349599230548506
+[11:26:27] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved too quickly! 9.666462726850142,3.0,-4.2877136151547575
+[11:26:27] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved too quickly! 10.172810094331368,3.0,-4.20016144560941
+[11:26:27] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved too quickly! 10.6723316703536,3.0,-4.080946316411428
+[11:26:27] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved too quickly! 11.155937968269114,3.0,-3.913749923135697
+[11:26:27] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved too quickly! 11.59154100838279,3.0,-3.662367716336121
+[11:26:27] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved too quickly! 11.936714898662245,2.9231679985046384,-3.3159057586650533
+[11:26:27] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved too quickly! 12.12322020311737,2.772546541336993,-3.106612548455473
+[11:26:27] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved too quickly! 12.282781550778992,2.5510576895623984,-2.896962034046851
+[11:26:27] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved too quickly! 12.410800955876283,2.261507790682643,-2.690733342555518
+[11:26:27] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved too quickly! 12.50748985828804,2.0,-2.49040597054136
+[11:26:27] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved too quickly! 12.414647677011175,2.0,-2.1523098229203015
+[11:26:27] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved too quickly! 12.18617576020253,2.0,-1.8116483466100135
+[11:26:27] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved too quickly! 11.885131076076021,2.0,-1.4696142140652455
+[11:26:27] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved too quickly! 11.545254151102625,2.0,-1.1268456005371945
+[11:26:27] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved too quickly! 11.18459886828336,2.0,-0.7836839808790046
+[11:26:27] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved too quickly! 10.812825500456569,2.0,-0.4403120714762281
+[11:26:27] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved too quickly! 10.435103067012932,2.0,-0.09682764022386436
+[11:26:27] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved too quickly! 10.054197407169312,3.0,0.24671699922669177
+[11:26:27] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved too quickly! 9.671588466345753,3.0,0.5902938548837255
+[11:26:27] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2466ms or 49 ticks behind
+[11:26:49] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved wrongly! 0.3823807692524497
+[11:26:49] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved wrongly! 0.8863993149126372
+[11:33:24] [Server thread/INFO]: Tlfaz_Man lost connection: Disconnected
+[11:33:24] [Server thread/INFO]: Tlfaz_Man left the game
+[11:33:24] [Server thread/INFO]: [voicechat] Disconnecting client Tlfaz_Man
+[11:34:22] [Server thread/INFO]: Tlfaz_Man[/[0:0:0:0:0:0:0:1%0]:43640] logged in with entity id 21313 at (208.3336837519735, 64.84375, 263.2880800832724)
+[11:34:22] [Server thread/INFO]: Tlfaz_Man joined the game
+[11:34:22] [Server thread/INFO]: [voicechat] Received secret request of Tlfaz_Man (18)
+[11:34:22] [Server thread/INFO]: [voicechat] Sent secret to Tlfaz_Man
+[11:34:29] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved wrongly! 0.3470096381672363
+[11:34:29] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved wrongly! 0.7374445128218667
+[11:34:43] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved wrongly! 0.30670365432160906
+[11:34:43] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved wrongly! 0.8059708912389283
+[11:35:10] [Server thread/INFO]: Tlfaz_Man lost connection: Disconnected
+[11:35:10] [Server thread/INFO]: Tlfaz_Man left the game
+[11:35:10] [Server thread/INFO]: [voicechat] Disconnecting client Tlfaz_Man
+[11:35:21] [Server thread/INFO]: Tlfaz_Man[/[0:0:0:0:0:0:0:1%0]:46610] logged in with entity id 21655 at (212.7187587381035, 64.84375, 266.80146026072646)
+[11:35:21] [Server thread/INFO]: Tlfaz_Man joined the game
+[11:35:22] [Server thread/INFO]: [voicechat] Received secret request of Tlfaz_Man (18)
+[11:35:22] [Server thread/INFO]: [voicechat] Sent secret to Tlfaz_Man
+[11:36:30] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved wrongly! 0.3686693819206539
+[11:36:30] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved wrongly! 0.8132640359436891
+[11:36:55] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved wrongly! 0.2990167773103849
+[11:36:55] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved wrongly! 0.76817432300669
+[11:37:14] [Server thread/INFO]: [Not Secure] <Blub_14> gbt looting?
+[11:37:17] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> la2
+[11:37:24] [Server thread/INFO]: [Not Secure] <Blub_14> tb t3ala
+[11:37:50] [Server thread/INFO]: soso[/[0:0:0:0:0:0:0:1%0]:46810] logged in with entity id 23452 at (81.5, 64.0, 108.5)
+[11:37:50] [Server thread/INFO]: soso joined the game
+[11:39:12] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved wrongly! 0.4955380362927144
+[11:39:12] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved wrongly! 0.9979743970700667
+[11:39:12] [Server thread/INFO]: soso was slain by Drowned
+[11:39:15] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved wrongly! 0.3483758255006535
+[11:39:15] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved wrongly! 0.8028351729448957
+[11:39:17] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved wrongly! 0.45038448840773526
+[11:39:17] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved wrongly! 0.9157165320638683
+[11:39:27] [Server thread/INFO]: soso was blown up by Creeper
+[11:39:29] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> 7lw bs s8yr mn gwa
+[11:39:38] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> Looting
+[11:39:57] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> estna
+[11:40:01] [Server thread/INFO]: soso was slain by Zombie
+[11:45:19] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved wrongly! 0.39618188556971745
+[11:45:19] [Server thread/WARN]: Horse (vehicle of Tlfaz_Man) moved wrongly! 0.8448055560708099
+[11:46:21] [Server thread/INFO]: soso has made the advancement [We Need to Go Deeper]
+[11:47:22] [Server thread/INFO]: Kofta_Man[/[0:0:0:0:0:0:0:1%0]:60070] logged in with entity id 31434 at (256.66323585063094, 81.0, 687.9853501841316)
+[11:47:23] [Server thread/INFO]: Kofta_Man joined the game
+[11:49:04] [Server thread/INFO]: [Tlfaz_Man: Applied skin changes for soso]
+[11:49:09] [Server thread/INFO]: [Tlfaz_Man: No skin changes]
+[11:49:17] [Server thread/INFO]: Tlfaz_Man lost connection: Disconnected
+[11:49:17] [Server thread/INFO]: Tlfaz_Man left the game
+[11:49:17] [Server thread/INFO]: [voicechat] Disconnecting client Tlfaz_Man
+[11:49:19] [Server thread/INFO]: Tlfaz_Man[/[0:0:0:0:0:0:0:1%0]:57444] logged in with entity id 32189 at (261.48750001192093, 75.0, 690.6994097860173)
+[11:49:19] [Server thread/INFO]: Tlfaz_Man joined the game
+[11:49:19] [Server thread/INFO]: [voicechat] Received secret request of Tlfaz_Man (18)
+[11:49:19] [Server thread/INFO]: [voicechat] Sent secret to Tlfaz_Man
+[11:49:25] [Server thread/INFO]: [Tlfaz_Man: No skin changes]
+[11:50:09] [Server thread/INFO]: [Tlfaz_Man: No skin changes]
+[11:50:52] [Server thread/INFO]: soso has made the advancement [Sweet Dreams]
+[11:51:04] [Server thread/INFO]: soso was slain by 3mkbody
+[11:51:28] [Server thread/INFO]: [Tlfaz_Man: Applied skin changes for soso]
+[11:51:36] [Server thread/INFO]: Tlfaz_Man lost connection: Disconnected
+[11:51:36] [Server thread/INFO]: Tlfaz_Man left the game
+[11:51:36] [Server thread/INFO]: [voicechat] Disconnecting client Tlfaz_Man
+[11:51:39] [Server thread/INFO]: Tlfaz_Man[/[0:0:0:0:0:0:0:1%0]:56286] logged in with entity id 33127 at (258.37975935328797, 75.0, 688.92343375235)
+[11:51:39] [Server thread/INFO]: Tlfaz_Man joined the game
+[11:51:39] [Server thread/INFO]: [voicechat] Received secret request of Tlfaz_Man (18)
+[11:51:39] [Server thread/INFO]: [voicechat] Sent secret to Tlfaz_Man
+[11:52:37] [Server thread/INFO]: 3mkbody lost connection: Disconnected
+[11:52:37] [Server thread/INFO]: 3mkbody left the game
+[11:52:37] [Server thread/INFO]: [voicechat] Disconnecting client 3mkbody
+[11:52:42] [Server thread/INFO]: 3mkbody[/[0:0:0:0:0:0:0:1%0]:52668] logged in with entity id 33692 at (230.88099708257704, 71.0, 737.4130157317131)
+[11:52:42] [Server thread/INFO]: 3mkbody joined the game
+[11:52:56] [Server thread/INFO]: 3mkbody lost connection: Disconnected
+[11:52:56] [Server thread/INFO]: 3mkbody left the game
+[11:52:56] [Server thread/INFO]: [voicechat] Disconnecting client 3mkbody
+[11:53:16] [Server thread/INFO]: 3mkbody[/[0:0:0:0:0:0:0:1%0]:34372] logged in with entity id 34049 at (287.95120894909957, 72.0, 781.7937131486435)
+[11:53:16] [Server thread/INFO]: 3mkbody joined the game
+[11:55:06] [Server thread/INFO]: soso has made the advancement [Cover Me with Diamonds]
+[11:55:17] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> Blub_14 m3ak Name Tag?
+[11:57:50] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> Blub_14 m3ak Name Tag?
+[11:57:51] [Server thread/INFO]: [Not Secure] <Blub_14> ?
+[11:57:54] [Server thread/INFO]: [Not Secure] <Blub_14> la2
+[11:57:56] [Server thread/INFO]: [Not Secure] <Blub_14> msh 3arf
+[11:57:58] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> hat emerald
+[11:57:59] [Server thread/INFO]: [Not Secure] <Blub_14> shof fy el chests
+[11:58:06] [Server thread/INFO]: [Not Secure] <Blub_14> bshtry enchatments
+[11:58:45] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> m3ak enderchest?
+[12:02:46] [Server thread/INFO]: Tlfaz_Man lost connection: Disconnected
+[12:02:46] [Server thread/INFO]: Tlfaz_Man left the game
+[12:02:46] [Server thread/INFO]: [voicechat] Disconnecting client Tlfaz_Man
+[12:04:35] [Server thread/INFO]: Tlfaz_Man[/[0:0:0:0:0:0:0:1%0]:33720] logged in with entity id 39817 at (327.5, 86.0, 830.5)
+[12:04:35] [Server thread/INFO]: Tlfaz_Man joined the game
+[12:04:36] [Server thread/INFO]: [voicechat] Received secret request of Tlfaz_Man (18)
+[12:04:36] [Server thread/INFO]: [voicechat] Sent secret to Tlfaz_Man
+[12:04:57] [Server thread/INFO]: [Not Secure] <Blub_14> yahya 3ml el enderman farm?
+[12:05:03] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> bayza
+[12:05:07] [Server thread/INFO]: [Not Secure] <Blub_14> leh?
+[12:05:08] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> el endermite mat
+[12:05:24] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> 3ayz name tag 3lshan a9l7a
+[12:05:29] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> ro7 e3mlha
+[12:05:42] [Server thread/INFO]: [Not Secure] <Blub_14> t3ala m3aya
+[12:05:49] [Server thread/INFO]: [Not Secure] <Blub_14> ana brg3 7gaty
+[12:15:21] [Server thread/INFO]: soso has made the advancement [Monster Hunter]
+[12:20:36] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=324, y=73, z=765} class_2338{x=323, y=72, z=765}
+[12:20:36] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=324, y=73, z=765} class_2338{x=323, y=72, z=765}
+[12:28:17] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> hat emerald
+[12:28:59] [Server thread/INFO]: soso has made the advancement [Eye Spy]
+[12:29:29] [Server thread/INFO]: Blub_14 lost connection: Timed out
+[12:29:29] [Server thread/INFO]: Blub_14 left the game
+[12:29:29] [Server thread/INFO]: [voicechat] Disconnecting client Blub_14
+[12:29:29] [Server thread/WARN]: handleDisconnection() called twice
+[12:29:38] [Thread-33/WARN]: Failed to fetch skin: no profile with uuid e4632f8c-51ef-3d5d-a204-9801251254e0
+[12:29:39] [Server thread/INFO]: Blub_14[/[0:0:0:0:0:0:0:1%0]:54826] logged in with entity id 53559 at (263.9199001553335, 75.0, 720.4990716208569)
+[12:29:39] [Server thread/INFO]: Blub_14 joined the game
+[12:29:39] [Server thread/INFO]: [voicechat] Received secret request of Blub_14 (18)
+[12:29:39] [Server thread/INFO]: [voicechat] Sent secret to Blub_14
+[12:30:10] [Server thread/INFO]: [Not Secure] <Blub_14> 5sh 3leh
+[12:30:19] [Server thread/INFO]: soso has made the advancement [The End?]
+[12:30:19] [Server thread/WARN]: soso moved too quickly! 926.1157775416182,29.392604549951344,-2296.8551228676365
+[12:30:20] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2562ms or 51 ticks behind
+[12:31:21] [Server thread/INFO]: soso has made the advancement [Stone Age]
+[12:31:44] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> eh
+[12:32:22] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> ana ray7 el end
+[12:32:31] [Server thread/INFO]: [Not Secure] <Blub_14> mna 3ayz aro7 ana kman
+[12:32:37] [Server thread/INFO]: [Not Secure] <Blub_14> 3ayz ender chest bs
+[12:32:45] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> m3esh obsidian
+[12:35:33] [Server thread/WARN]: Blub_14 moved too quickly! -0.2729958686953182,1.6319031399820005,-10.224444912033334
+[12:35:44] [Server thread/INFO]: [Not Secure] <Blub_14> Tlfaz_Man
+[12:35:46] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> ?
+[12:35:52] [Server thread/INFO]: [Not Secure] <Blub_14> fenk
+[12:35:57] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> ray7 el end
+[12:36:03] [Server thread/INFO]: [Not Secure] <Blub_14> tb mtstnany
+[12:36:11] [Server thread/INFO]: soso has made the advancement [Remote Getaway]
+[12:36:12] [Server thread/INFO]: Kofta_Man lost connection: Timed out
+[12:36:12] [Server thread/INFO]: Kofta_Man left the game
+[12:36:12] [Server thread/INFO]: [voicechat] Disconnecting client Kofta_Man
+[12:36:19] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> there is a road Beside My Nether Portal
+[12:36:35] [Server thread/INFO]: [Not Secure] <Blub_14> ana fy el stronghold
+[12:37:25] [Server thread/INFO]: 3mkbody fell out of the world
+[12:37:52] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> ana hnak
+[12:40:20] [Server thread/INFO]: [Not Secure] <Blub_14> i saved your life :3
+[12:40:25] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> ah
+[12:41:12] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=231, y=46, z=0} class_2338{x=231, y=49, z=0}
+[12:41:37] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> need help?
+[12:42:54] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> a7a
+[12:43:11] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> m3esh name tag
+[12:43:13] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> ;D
+[12:43:15] [Server thread/INFO]: [Not Secure] <Blub_14> a7a
+[12:43:30] [Server thread/INFO]: [Not Secure] <Blub_14> b3den b2a t3ala nged el elyutra
+[12:43:32] [Server thread/INFO]: [Not Secure] <Blub_14> elytra
+[12:43:40] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> mashy
+[12:44:52] [Server thread/INFO]: [Not Secure] <Blub_14> m3ak wood?
+[12:44:56] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> ah
+[12:45:05] [Server thread/INFO]: [Not Secure] <Blub_14> msh htegy tyb?
+[12:45:16] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> gy
+[12:45:50] [Server thread/WARN]: Blub_14 was kicked for floating too long!
+[12:45:50] [Server thread/INFO]: Blub_14 lost connection: Flying is not enabled on this server
+[12:45:50] [Server thread/INFO]: Blub_14 left the game
+[12:45:50] [Server thread/INFO]: [voicechat] Disconnecting client Blub_14
+[12:45:54] [Thread-34/WARN]: Failed to fetch skin: no profile with uuid e4632f8c-51ef-3d5d-a204-9801251254e0
+[12:45:54] [Server thread/INFO]: Blub_14[/[0:0:0:0:0:0:0:1%0]:47536] logged in with entity id 61524 at (11.329506126533996, 64.00133597911214, 14.096648225651101)
+[12:45:54] [Server thread/INFO]: Blub_14 joined the game
+[12:45:54] [Server thread/INFO]: [voicechat] Received secret request of Blub_14 (18)
+[12:45:54] [Server thread/INFO]: [voicechat] Sent secret to Blub_14
+[12:46:07] [Server thread/WARN]: Blub_14 moved too quickly! -9.671718435194087,0.42355929454303975,2.8528946269545834
+[12:46:21] [Server thread/INFO]: Blub_14 has made the advancement [Remote Getaway]
+[12:46:33] [Server thread/WARN]: 3mkbody moved too quickly! 0.0,-10.719436274526597,0.010739447364130683
+[12:46:38] [Server thread/INFO]: 3mkbody fell out of the world
+[12:46:48] [Server thread/INFO]: [Not Secure] <Blub_14> hat wood
+[12:47:08] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> ana hro7 kda
+[12:47:26] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> ana hro7 kda
+[12:47:27] [Server thread/INFO]: soso fell out of the world
+[12:47:52] [Server thread/INFO]: [Not Secure] <Blub_14> ro7to el city ely wra el portal?
+[12:47:54] [Server thread/INFO]: soso was blown up by Creeper
+[12:47:57] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> ah
+[12:48:35] [Server thread/INFO]: soso lost connection: Disconnected
+[12:48:35] [Server thread/INFO]: soso left the game
+[12:48:35] [Server thread/INFO]: [voicechat] Disconnecting client soso
+[12:49:39] [Server thread/INFO]: 3mkbody was slain by Zombie
+[12:51:29] [Server thread/INFO]: Blub_14 has made the advancement [The City at the End of the Game]
+[12:51:56] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> ship?
+[12:52:00] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> i found one
+[12:52:06] [Server thread/INFO]: [Not Secure] <Blub_14> ah bs t2reban enta ro7tha
+[12:52:26] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> change direction
+[12:53:27] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> hat shulkers 3la el a2l
+[12:53:36] [Server thread/INFO]: [Not Secure] <Blub_14> b3ml kda
+[12:55:39] [Server thread/INFO]: Blub_14 has reached the goal [Sky's the Limit]
+[12:56:40] [Server thread/INFO]: Blub_14 has completed the challenge [Great View From Up Here]
+[13:00:37] [Server thread/INFO]: 3mkbody was slain by Enderman
+[13:00:41] [Server thread/WARN]: Blub_14 moved too quickly! 15.826590103416493,-4.805002441198923,7.1813442441398365
+[13:02:03] [Server thread/INFO]: 3mkbody was slain by Endermite
+[13:03:33] [Server thread/WARN]: Blub_14 moved too quickly! 1.3949019155570568,12.926942500810057,12.758898664219487
+[13:03:38] [Server thread/WARN]: Blub_14 moved too quickly! 2.102247191695369,-5.475581047226683,16.73881589920211
+[13:04:01] [Server thread/WARN]: Blub_14 moved too quickly! 2.500943436796206,-5.449942800077025,17.99407710139394
+[13:04:08] [Server thread/WARN]: Blub_14 moved too quickly! 0.603020444409367,7.693521078263132,16.499233249578992
+[13:04:37] [Server thread/WARN]: Blub_14 moved too quickly! 13.355087367207716,-3.31933922933284,12.58836153106904
+[13:05:17] [Server thread/WARN]: Blub_14 moved too quickly! -7.172233425725608,-2.5859758368984416,16.294482484854143
+[13:05:25] [Server thread/WARN]: Blub_14 moved too quickly! -1.5412135954825317,-2.485493805207298,18.018294637603503
+[13:05:30] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> ah
+[13:05:35] [Server thread/INFO]: [Not Secure] <Blub_14> kam?
+[13:05:38] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> 3
+[13:05:41] [Server thread/INFO]: [Not Secure] <Blub_14> tany?
+[13:05:51] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> ah
+[13:05:58] [Server thread/INFO]: [Not Secure] <Blub_14> ezay?
+[13:05:59] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> enta kam
+[13:05:59] [Server thread/WARN]: Blub_14 moved too quickly! 0.41106779454526077,-2.096537748510414,17.861944495852185
+[13:06:05] [Server thread/INFO]: [Not Secure] <Blub_14> ana gbt wa7da bl3afya
+[13:06:16] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> I found another
+[13:06:23] [Server thread/INFO]: 3mkbody lost connection: Disconnected
+[13:06:23] [Server thread/INFO]: 3mkbody left the game
+[13:06:23] [Server thread/INFO]: [voicechat] Disconnecting client 3mkbody
+[13:06:36] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> mfesh ship
+[13:08:18] [Server thread/INFO]: Tlfaz_Man fell from a high place
+[13:08:22] [Server thread/INFO]: [Not Secure] <Blub_14> gd3
+[13:08:29] [Server thread/INFO]: [Not Secure] <Blub_14> mot fen
+[13:08:43] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> m3rfhs
+[13:08:54] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> bs 7tet elytra fi el ender chest
+[13:09:01] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> ana 3arf el direction
+[13:09:01] [Server thread/INFO]: [Not Secure] <Blub_14> shof lw 3ayz mmkn ageblk 7agtk
+[13:09:17] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> ana 3ayz ender chest bs
+[13:11:12] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> I jumped and didnt have my elytra on
+[13:11:29] [Server thread/INFO]: [Not Secure] <Blub_14> mna b2olk gd3
+[13:12:50] [Server thread/WARN]: Blub_14 moved too quickly! 1.7009966333630473,-1.6628321513634745,18.440529886618606
+[13:13:10] [Server thread/WARN]: Blub_14 moved too quickly! 1.1590491661197575,-1.964404992931918,17.752517806633477
+[13:13:19] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> 3ndk cleric?
+[13:13:23] [Server thread/INFO]: [Not Secure] <Blub_14> ah
+[13:14:29] [Server thread/WARN]: Blub_14 moved too quickly! -0.31737634741284637,3.2188081147236858,17.795696267516178
+[13:16:42] [Server thread/INFO]: [Not Secure] <Blub_14> tytt
+[13:17:09] [Server thread/WARN]: Blub_14 moved too quickly! -16.578549927561653,6.942578332548663,2.585492408132268
+[13:40:24] [Server thread/INFO]: 3mkbody[/[0:0:0:0:0:0:0:1%0]:55694] logged in with entity id 104055 at (258.91118099696195, 75.0, 661.3430650087095)
+[13:40:24] [Server thread/INFO]: 3mkbody joined the game
+[13:40:58] [Server thread/WARN]: Blub_14 moved too quickly! 0.8425811217152841,-1.490546988143194,17.858791993348405
+[13:41:01] [Server thread/WARN]: Blub_14 moved too quickly! 2.0104910399344362,-0.7601855870196914,17.75715013038257
+[13:41:10] [Server thread/WARN]: Blub_14 moved too quickly! 2.314171128323494,2.446078289846753,17.86008962610049
+[13:41:15] [Server thread/WARN]: Blub_14 moved too quickly! -1.8863641378364946,-2.9028110985250635,17.415397709907666
+[13:41:42] [Server thread/INFO]: [Not Secure] <3mkbody> blubbbb
+[13:41:47] [Server thread/INFO]: [Not Secure] <Blub_14> 2lb blub?
+[13:41:59] [Server thread/INFO]: [Not Secure] <3mkbody> ma tgebly elitra ya 7oby
+[13:42:30] [Server thread/INFO]: [Not Secure] <Blub_14> 2y 5dma
+[13:42:35] [Server thread/INFO]: [Not Secure] <3mkbody> fire work b2a
+[13:42:49] [Server thread/INFO]: [Not Secure] <3mkbody> 2lby ya blub walahyy
+[13:42:59] [Server thread/INFO]: [Not Secure] <Blub_14> ro7 7t 3leha unbreaking III w mending
+[13:43:03] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> mtro7sh el end
+[13:43:10] [Server thread/INFO]: [Not Secure] <Blub_14> ah yaret bardo
+[13:44:12] [Server thread/INFO]: [Not Secure] <Blub_14> mmkn tgeb armor 3shan 7ram tmot beha
+[13:45:18] [Server thread/INFO]: [Not Secure] <3mkbody> m3e4 ay 7aga 5alessss
+[13:45:25] [Server thread/INFO]: [Not Secure] <3mkbody> enta feen
+[13:45:33] [Server thread/INFO]: [Not Secure] <Blub_14> t3ala m3aya ana hzbtk
+[13:45:38] [Server thread/INFO]: [Not Secure] <3mkbody> enta feen
+[13:45:54] [Server thread/INFO]: [Tlfaz_Man: Set own game mode to Creative Mode]
+[13:45:54] [Server thread/INFO]: [Not Secure] <Blub_14> 3nd srerak
+[13:45:56] [Server thread/INFO]: [Tlfaz_Man: Set own game mode to Survival Mode]
+[13:46:09] [Server thread/INFO]: [Not Secure] <Blub_14> 2lbs el elytra w t3ala
+[13:46:10] [Server thread/INFO]: [Not Secure] <3mkbody> akl wenabyyy
+[13:46:41] [Server thread/INFO]: [Not Secure] <Blub_14> t3ala
+[13:47:16] [Server thread/INFO]: [Not Secure] <Blub_14> eh r2yk el 2wl?
+[13:47:24] [Server thread/INFO]: [Not Secure] <3mkbody> gameddd fa455
+[13:47:31] [Server thread/INFO]: [Not Secure] <3mkbody> t3ala 5od
+[13:47:39] [Server thread/INFO]: [Not Secure] <Blub_14> 2lby ya3m
+[13:47:54] [Server thread/INFO]: [Not Secure] <Blub_14> da bta3y s7?
+[13:47:55] [Server thread/INFO]: [Not Secure] <3mkbody> kont sare2hom menak
+[13:48:03] [Server thread/INFO]: [Not Secure] <Blub_14> 5alehomlk
+[13:48:08] [Server thread/INFO]: [Not Secure] <Blub_14> ro7 geb behom 7gat \
+[13:48:10] [Server thread/INFO]: [Not Secure] <3mkbody> la2 bto3ak
+[13:48:18] [Server thread/INFO]: [Not Secure] <3mkbody> mna gebt kotob bs
+[13:48:22] [Server thread/INFO]: [Not Secure] <Blub_14> ya3m mna 3arf kda kda hdehomlk
+[13:48:27] [Server thread/INFO]: [Not Secure] <Blub_14> ro7 5dhm bs
+[13:48:31] [Server thread/INFO]: [Not Secure] <Blub_14> w geb 7gat
+[13:49:22] [Server thread/INFO]: [Not Secure] <3mkbody> ageb dro3 w sword w keda mneen??
+[13:49:28] [Server thread/INFO]: [Not Secure] <Blub_14> t3ala
+[13:53:16] [Server thread/INFO]: [Not Secure] <Blub_14> 3
+[13:53:18] [Server thread/INFO]: [Not Secure] <Blub_14> 3mkbody
+[13:53:26] [Server thread/INFO]: [Not Secure] <Blub_14> t3ala a2olk sr
+[13:53:31] [Server thread/INFO]: [Not Secure] <3mkbody> ok
+[13:53:43] [Server thread/INFO]: [Not Secure] <Blub_14> t3ala
+[13:53:56] [Server thread/INFO]: [Not Secure] <Blub_14> bos
+[13:54:03] [Server thread/INFO]: [Not Secure] <Blub_14> 5d 7ba
+[13:54:07] [Server thread/INFO]: [Not Secure] <Blub_14> kter
+[13:54:38] [Server thread/INFO]: [Not Secure] <3mkbody> gamed awyyyy yastaaa
+[13:54:39] [Server thread/INFO]: [Not Secure] <Blub_14> t2dr tgeb emerald kter
+[13:54:46] [Server thread/INFO]: [Not Secure] <3mkbody> bs el villegar 5alas
+[13:54:53] [Server thread/INFO]: [Not Secure] <Blub_14> m3aya 12 meno
+[13:55:16] [Server thread/INFO]: [Not Secure] <Blub_14> bta5d Xp w emerald
+[13:55:30] [Server thread/INFO]: [Not Secure] <Blub_14> t3ala
+[13:55:40] [Server thread/INFO]: [Not Secure] <Blub_14> shayf el chest ely t7t da
+[13:55:45] [Server thread/INFO]: [Not Secure] <3mkbody> ah
+[13:55:50] [Server thread/INFO]: [Not Secure] <Blub_14> 5d mno bra7tk
+[13:57:18] [Server thread/INFO]: Blub_14 has completed the challenge [Hot Tourist Destinations]
+[13:57:18] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=-146, y=84, z=37} class_2338{x=-148, y=85, z=39}
+[13:57:19] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=-146, y=84, z=37} class_2338{x=-148, y=85, z=39}
+[13:57:41] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=-162, y=76, z=-9} class_2338{x=-162, y=78, z=-8}
+[13:59:01] [Server thread/INFO]: [Not Secure] <Blub_14> body
+[13:59:06] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=121, y=47, z=21} class_2338{x=116, y=49, z=47}
+[13:59:06] [Server thread/INFO]: [Not Secure] <Blub_14> meen beto a7sn
+[13:59:19] [Server thread/INFO]: [Not Secure] <Blub_14> ana wla ahmed
+[13:59:32] [Server thread/INFO]: [Not Secure] <3mkbody> enta akeed ahmed akbr bs enta a7laaa
+[13:59:52] [Server thread/INFO]: [Not Secure] <Blub_14> 2lby y3m
+[13:59:55] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> bs ya m#@$
+[14:00:14] [Server thread/INFO]: [Not Secure] <Blub_14> marshy*
+[14:00:33] [Server thread/INFO]: [Not Secure] <3mkbody> blub da 3m el nass
+[14:01:21] [Server thread/INFO]: [Not Secure] <3mkbody> m3ak ender chest??
+[14:01:57] [Server thread/INFO]: [Not Secure] <3mkbody> 3ayz ageb xp kterrr
+[14:02:06] [Server thread/INFO]: [Not Secure] <Blub_14> ro7 el enderman fark
+[14:02:09] [Server thread/INFO]: [Not Secure] <3mkbody> mtegy nsala7 el farm
+[14:02:11] [Server thread/INFO]: [Not Secure] <Blub_14> mn8er el elytra m3lsh
+[14:02:17] [Server thread/INFO]: [Not Secure] <Tlfaz_Man> ana fy el end htd5l h2tlk
+[14:02:57] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=228, y=65, z=195} class_2338{x=230, y=65, z=195}
+[14:03:05] [Server thread/INFO]: [Not Secure] <3mkbody> lehhh
+[14:04:12] [Server thread/WARN]: 3mkbody moved too quickly! 926.4331873497845,29.26590000152588,-2296.876127717338
+[14:05:39] [Thread-36/WARN]: Failed to fetch skin: no profile with uuid e4632f8c-51ef-3d5d-a204-9801251254e0
+[14:05:39] [Server thread/INFO]: Blub_14 lost connection: You logged in from another location
+[14:05:39] [Server thread/INFO]: Blub_14 left the game
+[14:05:39] [Server thread/INFO]: [voicechat] Disconnecting client Blub_14
+[14:05:40] [Server thread/INFO]: Blub_14[/[0:0:0:0:0:0:0:1%0]:48860] logged in with entity id 120232 at (213.30000001192093, 61.0, 206.55350191142284)
+[14:05:40] [Server thread/INFO]: Blub_14 joined the game
+[14:05:40] [Server thread/INFO]: [voicechat] Received secret request of Blub_14 (18)
+[14:05:40] [Server thread/INFO]: [voicechat] Sent secret to Blub_14
+[14:11:07] [Server thread/INFO]: Tlfaz_Man lost connection: Disconnected
+[14:11:07] [Server thread/INFO]: Tlfaz_Man left the game
+[14:11:07] [Server thread/INFO]: [voicechat] Disconnecting client Tlfaz_Man
+[14:11:30] [Server thread/INFO]: [Not Secure] <Blub_14> fenk?
+[14:11:34] [Server thread/INFO]: [Not Secure] <3mkbody> el end
+[14:11:38] [Server thread/INFO]: [Not Secure] <Blub_14> leh?
+[14:12:03] [Server thread/INFO]: [Not Secure] <3mkbody> bged xp
+[14:12:14] [Server thread/INFO]: [Not Secure] <Blub_14> tb 5ls w t3ala
+[14:14:51] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=210, y=64, z=187} class_2338{x=211, y=64, z=187}
+[14:14:51] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=210, y=64, z=187} class_2338{x=211, y=64, z=187}
+[14:14:51] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=210, y=64, z=187} class_2338{x=211, y=64, z=187}
+[14:14:51] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=210, y=64, z=187} class_2338{x=211, y=64, z=187}
+[14:14:52] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=210, y=64, z=187} class_2338{x=211, y=64, z=187}
+[14:25:27] [Server thread/INFO]: [Not Secure] <3mkbody> blubbbb
+[14:25:31] [Server thread/INFO]: [Not Secure] <Blub_14> n3mm
+[14:25:41] [Server thread/INFO]: [Not Secure] <3mkbody> 3ayz ageb fire works kterr
+[14:25:50] [Server thread/INFO]: [Not Secure] <3mkbody> w 3ayz chulker chest
+[14:25:54] [Server thread/INFO]: [Not Secure] <Blub_14> t3ala n3ml creeper farm
+[14:26:00] [Server thread/INFO]: [Not Secure] <3mkbody> ok
+[14:26:42] [Server thread/INFO]: [Not Secure] <3mkbody> bos el sword bta3y
+[14:26:45] [Server thread/INFO]: [Not Secure] <Blub_14> bs el 2wl 3ayz asr2 iron mn wy 7d
+[14:27:00] [Server thread/INFO]: [Not Secure] <Blub_14> 7lw na2s fire aspect II
+[14:27:03] [Server thread/INFO]: [Not Secure] <3mkbody> ahmed
+[14:27:11] [Server thread/INFO]: [Not Secure] <3mkbody> aywa bs lama aged xp
+[14:27:18] [Server thread/INFO]: [Not Secure] <Blub_14> 2shta hro7 2sr2 mno
+[14:27:29] [Server thread/WARN]: Blub_14 moved too quickly! 1.5681110267326517,2.998353169224373,-17.770911321544034
+[14:28:41] [Server thread/WARN]: Blub_14 moved too quickly! -1.2541970563872837,-1.5208928345993797,-17.55213917340052
+[14:28:52] [Server thread/WARN]: Blub_14 moved too quickly! -1.5670533868246537,-3.954515964774174,-16.873410265999212
+[14:29:19] [Server thread/INFO]: [Not Secure] <3mkbody> t3ala 5od iron
+[14:29:24] [Server thread/INFO]: [Not Secure] <Blub_14> 25dt
+[14:29:42] [Server thread/INFO]: [Not Secure] <Blub_14> t3ala 3ndy
+[14:29:53] [Server thread/INFO]: [Not Secure] <Blub_14> ngm3 7gat el creeper farm
+[14:30:10] [Server thread/INFO]: [Not Secure] <3mkbody> enta feen
+[14:30:15] [Server thread/INFO]: [Not Secure] <Blub_14> 3nd el villagers
+[14:30:20] [Server thread/WARN]: 3mkbody moved too quickly! 6.831785511349722,-3.657809475616091,16.3466972041316
+[14:31:33] [Server thread/INFO]: [Not Secure] <3mkbody> feenak
+[14:31:39] [Server thread/INFO]: [Not Secure] <Blub_14> 3nd el villagers
+[14:31:43] [Server thread/WARN]: 3mkbody moved too quickly! 10.186385756587697,-0.22316552179651694,2.309497141908764
+[14:33:20] [Server thread/INFO]: [Not Secure] <Blub_14> bos
+[14:33:28] [Server thread/INFO]: [Not Secure] <Blub_14> fy 7len
+[14:33:35] [Server thread/INFO]: [Not Secure] <Blub_14> ya 2ma nro7 ngeb 7gat netherit
+[14:33:43] [Server thread/INFO]: [Not Secure] <Blub_14> netherite *
+[14:33:48] [Server thread/INFO]: [Not Secure] <Blub_14> 2w n3ml el farm
+[14:34:02] [Server thread/INFO]: [Not Secure] <3mkbody> eh tatweret el sheild
+[14:34:20] [Server thread/INFO]: [Not Secure] <Blub_14> w el flint and steel
+[14:34:39] [Server thread/INFO]: [Not Secure] <3mkbody> ezay ngeb netherite aslan??
+[14:34:40] [Server thread/INFO]: [Not Secure] <Blub_14> ha t5tar eh?
+[14:34:52] [Server thread/INFO]: [Not Secure] <3mkbody> mtegy discord 34an t3ebt
+[14:35:01] [Server thread/INFO]: [Not Secure] <Blub_14> t3ala el server bta3 ahmed
+[14:39:51] [Server thread/INFO]: Blub_14 has made the advancement [Those Were the Days]
+[14:39:52] [Server thread/INFO]: 3mkbody has made the advancement [Those Were the Days]
+[14:41:17] [Server thread/INFO]: 3mkbody was slain by Piglin Brute
+[14:41:47] [Server thread/INFO]: Blub_14 has made the advancement [War Pigs]
+[14:42:13] [Server thread/INFO]: 3mkbody was shot by Skeleton
+[14:43:15] [Server thread/INFO]: 3mkbody was shot by Skeleton
+[14:44:10] [Server thread/INFO]: 3mkbody was shot by Skeleton
+[14:44:29] [Server thread/WARN]: Blub_14 moved wrongly!
+[14:44:59] [Server thread/WARN]: Blub_14 moved too quickly! -17.126652299074944,0.45166109806054067,-6.9892266916829975
+[14:47:00] [Server thread/WARN]: Blub_14 moved too quickly! -0.4634183950538553,1.4711078250449674,-17.39232830524386
+[14:47:11] [Server thread/WARN]: Blub_14 moved too quickly! -17.55403822390865,3.625188836650125,-2.707160334699335
+[14:47:19] [Server thread/WARN]: Blub_14 moved too quickly! -0.6295319403739086,0.598819721819325,18.313830657152494
+[14:55:56] [Server thread/INFO]: Blub_14 was slain by Piglin Brute
+[14:57:02] [Server thread/INFO]: 3mkbody lost connection: Disconnected
+[14:57:02] [Server thread/INFO]: 3mkbody left the game
+[14:57:02] [Server thread/INFO]: [voicechat] Disconnecting client 3mkbody
+[14:59:33] [Server thread/INFO]: 3mkbody[/[0:0:0:0:0:0:0:1%0]:41740] logged in with entity id 161054 at (90.19871389856216, 53.0, 2.4512612274953005)
+[14:59:33] [Server thread/INFO]: 3mkbody joined the game
+[15:06:47] [Server thread/INFO]: Blub_14 was slain by Piglin
+[15:14:58] [Server thread/INFO]: Blub_14 lost connection: Disconnected
+[15:14:58] [Server thread/INFO]: Blub_14 left the game
+[15:14:58] [Server thread/INFO]: [voicechat] Disconnecting client Blub_14
+[15:15:01] [Thread-38/WARN]: Failed to fetch skin: no profile with uuid e4632f8c-51ef-3d5d-a204-9801251254e0
+[15:15:01] [Server thread/INFO]: Blub_14[/[0:0:0:0:0:0:0:1%0]:48344] logged in with entity id 170541 at (1044.4510534894125, 30.20500004388392, -617.306056921779)
+[15:15:01] [Server thread/INFO]: Blub_14 joined the game
+[15:15:02] [Server thread/INFO]: [voicechat] Received secret request of Blub_14 (18)
+[15:15:02] [Server thread/INFO]: [voicechat] Sent secret to Blub_14
+[15:15:04] [Server thread/INFO]: Blub_14 lost connection: Disconnected
+[15:15:04] [Server thread/INFO]: Blub_14 left the game
+[15:15:04] [Server thread/INFO]: [voicechat] Disconnecting client Blub_14
+[15:15:06] [Thread-39/WARN]: Failed to fetch skin: no profile with uuid e4632f8c-51ef-3d5d-a204-9801251254e0
+[15:15:07] [Server thread/INFO]: Blub_14[/[0:0:0:0:0:0:0:1%0]:46466] logged in with entity id 170701 at (1044.3102922433525, 28.367950408153497, -616.8193560690368)
+[15:15:07] [Server thread/INFO]: Blub_14 joined the game
+[15:15:07] [Server thread/INFO]: [voicechat] Received secret request of Blub_14 (18)
+[15:15:07] [Server thread/INFO]: [voicechat] Sent secret to Blub_14
+[15:15:10] [Server thread/INFO]: Blub_14 lost connection: Disconnected
+[15:15:10] [Server thread/INFO]: Blub_14 left the game
+[15:15:10] [Server thread/INFO]: [voicechat] Disconnecting client Blub_14
+[15:15:11] [Thread-40/WARN]: Failed to fetch skin: no profile with uuid e4632f8c-51ef-3d5d-a204-9801251254e0
+[15:15:12] [Server thread/INFO]: Blub_14[/[0:0:0:0:0:0:0:1%0]:46488] logged in with entity id 170872 at (1044.390052734997, 26.586400863592903, -617.0462103006195)
+[15:15:12] [Server thread/INFO]: Blub_14 joined the game
+[15:15:12] [Server thread/INFO]: [voicechat] Received secret request of Blub_14 (18)
+[15:15:12] [Server thread/INFO]: [voicechat] Sent secret to Blub_14
+[15:15:14] [Server thread/INFO]: Blub_14 lost connection: Disconnected
+[15:15:14] [Server thread/INFO]: Blub_14 left the game
+[15:15:14] [Server thread/INFO]: [voicechat] Disconnecting client Blub_14
+[15:15:15] [Thread-41/WARN]: Failed to fetch skin: no profile with uuid e4632f8c-51ef-3d5d-a204-9801251254e0
+[15:15:16] [Server thread/INFO]: Blub_14[/[0:0:0:0:0:0:0:1%0]:46506] logged in with entity id 171016 at (1045.1575130163405, 23.6269633537864, -617.273770292322)
+[15:15:16] [Server thread/INFO]: Blub_14 joined the game
+[15:15:16] [Server thread/INFO]: [voicechat] Received secret request of Blub_14 (18)
+[15:15:16] [Server thread/INFO]: [voicechat] Sent secret to Blub_14
+[15:15:18] [Server thread/INFO]: Blub_14 lost connection: Disconnected
+[15:15:18] [Server thread/INFO]: Blub_14 left the game
+[15:15:18] [Server thread/INFO]: [voicechat] Disconnecting client Blub_14
+[15:15:19] [Thread-42/WARN]: Failed to fetch skin: no profile with uuid e4632f8c-51ef-3d5d-a204-9801251254e0
+[15:15:20] [Server thread/INFO]: Blub_14[/[0:0:0:0:0:0:0:1%0]:57480] logged in with entity id 171173 at (1045.1575130163405, 23.724980441704393, -617.273770292322)
+[15:15:20] [Server thread/INFO]: Blub_14 joined the game
+[15:15:20] [Server thread/INFO]: [voicechat] Received secret request of Blub_14 (18)
+[15:15:20] [Server thread/INFO]: [voicechat] Sent secret to Blub_14
+[15:15:22] [Server thread/INFO]: Blub_14 lost connection: Disconnected
+[15:15:22] [Server thread/INFO]: Blub_14 left the game
+[15:15:22] [Server thread/INFO]: [voicechat] Disconnecting client Blub_14
+[15:15:23] [Thread-43/WARN]: Failed to fetch skin: no profile with uuid e4632f8c-51ef-3d5d-a204-9801251254e0
+[15:15:24] [Server thread/INFO]: Blub_14[/[0:0:0:0:0:0:0:1%0]:57510] logged in with entity id 171314 at (1045.1575130163405, 23.0, -617.273770292322)
+[15:15:24] [Server thread/INFO]: Blub_14 joined the game
+[15:15:24] [Server thread/INFO]: [voicechat] Received secret request of Blub_14 (18)
+[15:15:24] [Server thread/INFO]: [voicechat] Sent secret to Blub_14
+[15:15:28] [Server thread/INFO]: Blub_14 lost connection: Disconnected
+[15:15:28] [Server thread/INFO]: Blub_14 left the game
+[15:15:28] [Server thread/INFO]: [voicechat] Disconnecting client Blub_14
+[15:15:29] [Thread-44/WARN]: Failed to fetch skin: no profile with uuid e4632f8c-51ef-3d5d-a204-9801251254e0
+[15:15:29] [Server thread/INFO]: Blub_14[/[0:0:0:0:0:0:0:1%0]:42530] logged in with entity id 171476 at (1045.5463510670406, 24.564890335937612, -617.4454756671222)
+[15:15:29] [Server thread/INFO]: Blub_14 joined the game
+[15:15:30] [Server thread/INFO]: [voicechat] Received secret request of Blub_14 (18)
+[15:15:30] [Server thread/INFO]: [voicechat] Sent secret to Blub_14
+[15:15:33] [Server thread/INFO]: Blub_14 lost connection: Disconnected
+[15:15:33] [Server thread/INFO]: Blub_14 left the game
+[15:15:33] [Server thread/INFO]: [voicechat] Disconnecting client Blub_14
+[15:15:35] [Thread-45/WARN]: Failed to fetch skin: no profile with uuid e4632f8c-51ef-3d5d-a204-9801251254e0
+[15:15:35] [Server thread/INFO]: Blub_14[/[0:0:0:0:0:0:0:1%0]:42556] logged in with entity id 171637 at (1045.5463510670406, 22.0, -617.4454756671222)
+[15:15:35] [Server thread/INFO]: Blub_14 joined the game
+[15:15:36] [Server thread/INFO]: [voicechat] Received secret request of Blub_14 (18)
+[15:15:36] [Server thread/INFO]: [voicechat] Sent secret to Blub_14
+[15:15:39] [Server thread/INFO]: Blub_14 lost connection: Disconnected
+[15:15:39] [Server thread/INFO]: Blub_14 left the game
+[15:15:39] [Server thread/INFO]: [voicechat] Disconnecting client Blub_14
+[15:15:39] [Thread-46/WARN]: Failed to fetch skin: no profile with uuid e4632f8c-51ef-3d5d-a204-9801251254e0
+[15:15:40] [Server thread/INFO]: Blub_14[/[0:0:0:0:0:0:0:1%0]:35200] logged in with entity id 171796 at (1045.5463510670406, 22.084968739047646, -617.4454756671222)
+[15:15:40] [Server thread/INFO]: Blub_14 joined the game
+[15:15:40] [Server thread/INFO]: [voicechat] Received secret request of Blub_14 (18)
+[15:15:40] [Server thread/INFO]: [voicechat] Sent secret to Blub_14
+[15:15:43] [Server thread/INFO]: Blub_14 lost connection: Disconnected
+[15:15:43] [Server thread/INFO]: Blub_14 left the game
+[15:15:43] [Server thread/INFO]: [voicechat] Disconnecting client Blub_14
+[15:15:44] [Thread-47/WARN]: Failed to fetch skin: no profile with uuid e4632f8c-51ef-3d5d-a204-9801251254e0
+[15:15:45] [Server thread/INFO]: Blub_14[/[0:0:0:0:0:0:0:1%0]:35212] logged in with entity id 171946 at (1045.5463510670406, 22.0, -617.4454756671222)
+[15:15:45] [Server thread/INFO]: Blub_14 joined the game
+[15:15:45] [Server thread/INFO]: [voicechat] Received secret request of Blub_14 (18)
+[15:15:45] [Server thread/INFO]: [voicechat] Sent secret to Blub_14
+[15:15:49] [Server thread/INFO]: Blub_14 lost connection: Disconnected
+[15:15:49] [Server thread/INFO]: Blub_14 left the game
+[15:15:49] [Server thread/INFO]: [voicechat] Disconnecting client Blub_14
+[15:15:49] [Thread-48/WARN]: Failed to fetch skin: no profile with uuid e4632f8c-51ef-3d5d-a204-9801251254e0
+[15:15:50] [Server thread/INFO]: Blub_14[/[0:0:0:0:0:0:0:1%0]:38374] logged in with entity id 172109 at (1045.5463510670406, 22.0, -617.4454756671222)
+[15:15:50] [Server thread/INFO]: Blub_14 joined the game
+[15:15:51] [Server thread/INFO]: [voicechat] Received secret request of Blub_14 (18)
+[15:15:51] [Server thread/INFO]: [voicechat] Sent secret to Blub_14
+[15:15:53] [Server thread/INFO]: Blub_14 lost connection: Disconnected
+[15:15:53] [Server thread/INFO]: Blub_14 left the game
+[15:15:53] [Server thread/INFO]: [voicechat] Disconnecting client Blub_14
+[15:15:54] [Thread-49/WARN]: Failed to fetch skin: no profile with uuid e4632f8c-51ef-3d5d-a204-9801251254e0
+[15:15:54] [Server thread/INFO]: Blub_14[/[0:0:0:0:0:0:0:1%0]:38394] logged in with entity id 172289 at (1045.5463510670406, 22.0, -617.4454756671222)
+[15:15:54] [Server thread/INFO]: Blub_14 joined the game
+[15:15:55] [Server thread/INFO]: [voicechat] Received secret request of Blub_14 (18)
+[15:15:55] [Server thread/INFO]: [voicechat] Sent secret to Blub_14
+[15:15:58] [Server thread/INFO]: Blub_14 lost connection: Disconnected
+[15:15:58] [Server thread/INFO]: Blub_14 left the game
+[15:15:58] [Server thread/INFO]: [voicechat] Disconnecting client Blub_14
+[15:15:59] [Thread-50/WARN]: Failed to fetch skin: no profile with uuid e4632f8c-51ef-3d5d-a204-9801251254e0
+[15:16:00] [Server thread/INFO]: Blub_14[/[0:0:0:0:0:0:0:1%0]:43458] logged in with entity id 172466 at (1045.5463510670406, 22.0, -617.4454756671222)
+[15:16:00] [Server thread/INFO]: Blub_14 joined the game
+[15:16:00] [Server thread/INFO]: [voicechat] Received secret request of Blub_14 (18)
+[15:16:00] [Server thread/INFO]: [voicechat] Sent secret to Blub_14
+[15:16:49] [Server thread/INFO]: Blub_14 was slain by Piglin Brute
+[15:19:50] [Server thread/WARN]: Blub_14 moved wrongly!
+[15:20:04] [Server thread/WARN]: 3mkbody moved too quickly! 925.868227113085,29.26590000152588,-2297.057450168481
+[15:20:04] [Server thread/WARN]: Blub_14 moved too quickly! 17.708155922318042,2.256657867701719,-0.11782661684844697
+[15:20:13] [Server thread/WARN]: 3mkbody moved wrongly!
+[15:23:03] [Server thread/INFO]: 3mkbody was slain by Enderman
+[15:31:30] [Server thread/INFO]: 3mkbody lost connection: Disconnected
+[15:31:30] [Server thread/INFO]: 3mkbody left the game
+[15:31:30] [Server thread/INFO]: [voicechat] Disconnecting client 3mkbody
+[15:33:42] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=109, y=20, z=-321} class_2338{x=110, y=20, z=-321}
+[15:34:37] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=119, y=27, z=-348} class_2338{x=119, y=27, z=-349}
+[15:35:38] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=112, y=11, z=-392} class_2338{x=111, y=9, z=-393}
+[15:35:38] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=110, y=9, z=-392} class_2338{x=111, y=9, z=-393}
+[15:37:39] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=157, y=12, z=-477} class_2338{x=156, y=11, z=-477}
+[15:43:44] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=184, y=13, z=-537} class_2338{x=180, y=14, z=-538}
+[15:43:54] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=188, y=13, z=-533} class_2338{x=189, y=11, z=-533}
+[15:43:54] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=188, y=13, z=-533} class_2338{x=189, y=11, z=-533}
+[15:43:54] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=188, y=13, z=-533} class_2338{x=189, y=11, z=-533}
+[15:43:55] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=188, y=13, z=-533} class_2338{x=189, y=11, z=-533}
+[15:43:55] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=188, y=13, z=-533} class_2338{x=189, y=11, z=-533}
+[15:44:02] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=195, y=8, z=-530} class_2338{x=195, y=7, z=-531}
+[15:52:55] [Server thread/INFO]: Blub_14 has completed the challenge [Cover Me in Debris]
+[15:53:01] [Server thread/INFO]: Blub_14 has completed the challenge [Serious Dedication]
+[15:55:59] [Server thread/INFO]: Blub_14 has made the advancement [Ninja Item Frames]
+[16:16:48] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=238, y=88, z=268} class_2338{x=239, y=89, z=267}
+[16:17:43] [Server thread/WARN]: Mismatch in destroy block pos: class_2338{x=237, y=76, z=265} class_2338{x=237, y=74, z=265}
+[16:31:51] [Server thread/INFO]: Kofta_Man[/[0:0:0:0:0:0:0:1%0]:57620] logged in with entity id 202432 at (253.70704016184007, 74.0, 725.1141185685894)
+[16:31:51] [Server thread/INFO]: Kofta_Man joined the game
+[16:40:34] [Server thread/INFO]: [Not Secure] <Kofta_Man> T\
+[16:46:06] [Server thread/INFO]: Tlfaz_Man[/[0:0:0:0:0:0:0:1%0]:48886] logged in with entity id 208323 at (331.46991438758556, 86.0, 823.0630079041925)
+[16:46:06] [Server thread/INFO]: Tlfaz_Man joined the game
+[16:46:07] [Server thread/INFO]: [voicechat] Received secret request of Tlfaz_Man (18)
+[16:46:07] [Server thread/INFO]: [voicechat] Sent secret to Tlfaz_Man
+[16:47:02] [Server thread/INFO]: Kofta_Man has reached the goal [Sky's the Limit]
+[16:47:50] [Server thread/WARN]: Tlfaz_Man moved too quickly! -1.5373418343585854,-2.895829771200596,-17.526936492213053
+[16:50:39] [Server thread/INFO]: Tlfaz_Man lost connection: Disconnected
+[16:50:39] [Server thread/INFO]: Tlfaz_Man left the game
+[16:50:39] [Server thread/INFO]: [voicechat] Disconnecting client Tlfaz_Man
+[16:50:53] [Server thread/INFO]: Kofta_Man lost connection: Timed out
+[16:50:53] [Server thread/INFO]: Kofta_Man left the game
+[16:50:53] [Server thread/INFO]: [voicechat] Disconnecting client Kofta_Man
+[16:51:54] [Server thread/INFO]: Kofta_Man[/[0:0:0:0:0:0:0:1%0]:41114] logged in with entity id 210855 at (225.00576396890438, 63.0, 287.30000001192093)
+[16:51:54] [Server thread/INFO]: Kofta_Man joined the game
+[16:52:47] [Server thread/INFO]: Tlfaz_Man[/[0:0:0:0:0:0:0:1%0]:57944] logged in with entity id 211162 at (219.12882813762803, 64.5, 289.69999998807907)
+[16:52:47] [Server thread/INFO]: Tlfaz_Man joined the game
+[16:52:48] [Server thread/INFO]: [voicechat] Received secret request of Tlfaz_Man (18)
+[16:52:48] [Server thread/INFO]: [voicechat] Sent secret to Tlfaz_Man
+[16:56:43] [Server thread/INFO]: Villager class_1646['Villager'/211787, l='ServerLevel[world]', x=289.17, y=72.00, z=730.50] died, message: 'Villager was slain by Zombie'
+[16:57:04] [Server thread/INFO]: [Not Secure] <Kofta_Man> tttttt\\t\\
+[16:58:27] [Server thread/INFO]: [Kofta_Man: Set the weather to clear]
+[17:02:14] [Server thread/INFO]: [Not Secure] <Blub_14> Bt3ml eh hna?
+[17:02:40] [Server thread/INFO]: [Not Secure] <Kofta_Man> bgeeb al dark oak el ant srqto
+[17:06:16] [Server thread/INFO]: Villager class_1646['Villager'/211788, l='ServerLevel[world]', x=289.76, y=72.00, z=730.50] died, message: 'Villager was slain by Zombie'
+[17:06:55] [Server thread/INFO]: Villager class_1646['Villager'/211789, l='ServerLevel[world]', x=289.13, y=72.00, z=730.50] died, message: 'Villager was slain by Zombie'
+[17:10:20] [Server thread/WARN]: Tlfaz_Man moved wrongly!
+[17:10:41] [Server thread/WARN]: Tlfaz_Man moved wrongly!
+[17:10:59] [Server thread/INFO]: Villager class_1646['Villager'/211790, l='ServerLevel[world]', x=289.27, y=72.00, z=730.50] died, message: 'Villager was slain by Zombie'
+[17:15:39] [Server thread/INFO]: Blub_14 was slain by Zombie
+[17:15:47] [Server thread/INFO]: [Tlfaz_Man: Kicked Blub_14: Kicked by an operator]
+[17:15:47] [Server thread/INFO]: Blub_14 lost connection: Kicked by an operator
+[17:15:47] [Server thread/INFO]: Blub_14 left the game
+[17:15:47] [Server thread/INFO]: [voicechat] Disconnecting client Blub_14
+[17:18:42] [Server thread/INFO]: Kofta_Man lost connection: Timed out
+[17:18:42] [Server thread/INFO]: Kofta_Man left the game
+[17:18:42] [Server thread/INFO]: [voicechat] Disconnecting client Kofta_Man
+[17:33:50] [Server thread/INFO]: Tlfaz_Man lost connection: Disconnected
+[17:33:50] [Server thread/INFO]: Tlfaz_Man left the game
+[17:33:50] [Server thread/INFO]: [voicechat] Disconnecting client Tlfaz_Man
+[17:41:56] [Server thread/INFO]: Stopping the server
+[17:41:56] [Server thread/INFO]: Stopping server
+[17:41:56] [Server thread/INFO]: Saving players
+[17:41:56] [Server thread/INFO]: Saving worlds
+[17:41:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[17:41:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[17:41:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[17:41:57] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[17:41:57] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:41:57] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:41:57] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved

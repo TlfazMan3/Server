@@ -519,14 +519,16 @@
       "minecraft:skeleton": "2025-06-25 22:53:28 +0000",
       "minecraft:phantom": "2025-06-26 23:25:08 +0000",
       "minecraft:zombified_piglin": "2025-07-09 00:30:25 +0000",
-      "minecraft:enderman": "2025-07-08 22:00:39 +0000",
-      "minecraft:magma_cube": "2025-07-02 22:41:01 +0000",
-      "minecraft:spider": "2025-06-26 21:18:34 +0000",
-      "minecraft:zombie": "2025-06-25 22:21:49 +0000",
-      "minecraft:creeper": "2025-06-26 00:28:58 +0000",
       "minecraft:ghast": "2025-07-02 22:42:25 +0000",
       "minecraft:ender_dragon": "2025-07-08 21:50:44 +0000",
-      "minecraft:shulker": "2025-07-08 22:10:00 +0000"
+      "minecraft:shulker": "2025-07-08 22:10:00 +0000",
+      "minecraft:piglin": "2025-07-09 14:40:02 +0000",
+      "minecraft:enderman": "2025-07-08 22:00:39 +0000",
+      "minecraft:magma_cube": "2025-07-02 22:41:01 +0000",
+      "minecraft:endermite": "2025-07-09 13:02:10 +0000",
+      "minecraft:spider": "2025-06-26 21:18:34 +0000",
+      "minecraft:zombie": "2025-06-25 22:21:49 +0000",
+      "minecraft:creeper": "2025-06-26 00:28:58 +0000"
     },
     "done": false
   },
@@ -539,15 +541,17 @@
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
       "cooked_porkchop": "2025-06-26 21:12:49 +0000",
-      "apple": "2025-06-26 21:16:24 +0000",
       "bread": "2025-06-25 23:17:29 +0000",
       "golden_apple": "2025-07-08 23:31:00 +0000",
-      "cooked_chicken": "2025-06-26 21:00:36 +0000",
       "rotten_flesh": "2025-06-26 01:00:27 +0000",
       "cooked_mutton": "2025-06-25 23:14:43 +0000",
-      "potato": "2025-06-25 23:16:50 +0000",
       "cooked_beef": "2025-06-25 22:24:33 +0000",
       "melon_slice": "2025-07-07 21:01:43 +0000",
+      "porkchop": "2025-07-09 11:58:57 +0000",
+      "golden_carrot": "2025-07-09 13:46:23 +0000",
+      "apple": "2025-06-26 21:16:24 +0000",
+      "cooked_chicken": "2025-06-26 21:00:36 +0000",
+      "potato": "2025-06-25 23:16:50 +0000",
       "carrot": "2025-06-26 01:03:08 +0000"
     },
     "done": false
@@ -7272,6 +7276,12 @@
   "minecraft:nether/brew_potion": {
     "criteria": {
       "potion": "2025-07-08 22:05:40 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/find_bastion": {
+    "criteria": {
+      "bastion": "2025-07-09 14:39:52 +0000"
     },
     "done": true
   },

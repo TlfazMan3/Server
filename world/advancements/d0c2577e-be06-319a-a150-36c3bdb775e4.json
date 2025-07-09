@@ -852,7 +852,8 @@
       "minecraft:spider": "2025-06-26 00:00:14 +0000",
       "minecraft:zombie": "2025-06-25 23:59:35 +0000",
       "minecraft:creeper": "2025-06-26 00:25:01 +0000",
-      "minecraft:drowned": "2025-06-27 16:26:59 +0000"
+      "minecraft:drowned": "2025-06-27 16:26:59 +0000",
+      "minecraft:zombie_villager": "2025-07-09 16:48:25 +0000"
     },
     "done": false
   },
@@ -7292,30 +7293,6 @@
     },
     "done": true
   },
-  "minecraft:end/dragon_egg": {
-    "criteria": {
-      "dragon_egg": "2025-07-08 21:51:20 +0000"
-    },
-    "done": true
-  },
-  "minecraft:end/find_end_city": {
-    "criteria": {
-      "in_city": "2025-07-08 22:03:43 +0000"
-    },
-    "done": true
-  },
-  "minecraft:end/enter_end_gateway": {
-    "criteria": {
-      "entered_end_gateway": "2025-07-08 21:57:01 +0000"
-    },
-    "done": true
-  },
-  "minecraft:end/elytra": {
-    "criteria": {
-      "elytra": "2025-07-08 22:05:03 +0000"
-    },
-    "done": true
-  },
   "minecraft:end/root": {
     "criteria": {
       "entered_end": "2025-07-08 21:46:37 +0000"
@@ -7325,6 +7302,30 @@
   "minecraft:story/enter_the_end": {
     "criteria": {
       "entered_end": "2025-07-08 21:46:37 +0000"
+    },
+    "done": true
+  },
+  "minecraft:end/dragon_egg": {
+    "criteria": {
+      "dragon_egg": "2025-07-08 21:51:20 +0000"
+    },
+    "done": true
+  },
+  "minecraft:end/enter_end_gateway": {
+    "criteria": {
+      "entered_end_gateway": "2025-07-08 21:57:01 +0000"
+    },
+    "done": true
+  },
+  "minecraft:end/find_end_city": {
+    "criteria": {
+      "in_city": "2025-07-08 22:03:43 +0000"
+    },
+    "done": true
+  },
+  "minecraft:end/elytra": {
+    "criteria": {
+      "elytra": "2025-07-08 22:05:03 +0000"
     },
     "done": true
   },
