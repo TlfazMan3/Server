@@ -839,13 +839,18 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "minecraft:pillager": "2025-07-09 23:45:00 +0000",
       "minecraft:skeleton": "2025-06-26 21:25:06 +0000",
+      "minecraft:vindicator": "2025-07-09 23:45:02 +0000",
       "minecraft:enderman": "2025-07-08 21:39:57 +0000",
       "minecraft:witch": "2025-07-04 12:14:19 +0000",
       "minecraft:spider": "2025-06-26 21:27:41 +0000",
+      "minecraft:vex": "2025-07-09 23:50:40 +0000",
       "minecraft:zombie": "2025-06-26 21:33:36 +0000",
       "minecraft:creeper": "2025-06-26 22:11:08 +0000",
-      "minecraft:zombie_villager": "2025-07-08 23:36:05 +0000"
+      "minecraft:zombie_villager": "2025-07-08 23:36:05 +0000",
+      "minecraft:ravager": "2025-07-09 23:48:46 +0000",
+      "minecraft:evoker": "2025-07-09 23:48:33 +0000"
     },
     "done": false
   },
@@ -7269,6 +7274,18 @@
   "minecraft:end/elytra": {
     "criteria": {
       "elytra": "2025-07-09 16:47:02 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/voluntary_exile": {
+    "criteria": {
+      "voluntary_exile": "2025-07-09 23:45:02 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/hero_of_the_village": {
+    "criteria": {
+      "hero_of_the_village": "2025-07-09 23:51:17 +0000"
     },
     "done": true
   },

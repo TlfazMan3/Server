@@ -8,27 +8,29 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:cold_ocean": "2025-07-07 21:06:25 +0000",
-      "minecraft:flower_forest": "2025-06-26 00:17:58 +0000",
-      "minecraft:beach": "2025-06-25 22:17:02 +0000",
+      "minecraft:snowy_slopes": "2025-07-10 01:27:13 +0000",
       "minecraft:old_growth_pine_taiga": "2025-06-25 22:28:58 +0000",
-      "minecraft:dark_forest": "2025-06-25 22:25:18 +0000",
       "minecraft:forest": "2025-06-25 22:08:58 +0000",
       "minecraft:taiga": "2025-06-25 22:18:55 +0000",
-      "minecraft:river": "2025-06-25 22:25:13 +0000",
-      "minecraft:stony_shore": "2025-06-27 23:20:13 +0000",
-      "minecraft:snowy_plains": "2025-07-08 21:30:08 +0000",
       "minecraft:lush_caves": "2025-07-09 00:01:32 +0000",
-      "minecraft:dripstone_caves": "2025-06-26 22:01:38 +0000",
-      "minecraft:snowy_taiga": "2025-07-07 21:13:04 +0000",
       "minecraft:ice_spikes": "2025-07-08 21:33:06 +0000",
-      "minecraft:old_growth_birch_forest": "2025-06-25 23:01:49 +0000",
       "minecraft:frozen_ocean": "2025-07-08 23:58:39 +0000",
       "minecraft:frozen_river": "2025-07-08 21:31:10 +0000",
       "minecraft:sunflower_plains": "2025-06-26 21:06:25 +0000",
-      "minecraft:meadow": "2025-06-27 22:31:18 +0000",
       "minecraft:birch_forest": "2025-06-25 22:19:15 +0000",
       "minecraft:old_growth_spruce_taiga": "2025-06-25 22:26:40 +0000",
       "minecraft:snowy_beach": "2025-07-08 23:58:43 +0000",
+      "minecraft:flower_forest": "2025-06-26 00:17:58 +0000",
+      "minecraft:beach": "2025-06-25 22:17:02 +0000",
+      "minecraft:dark_forest": "2025-06-25 22:25:18 +0000",
+      "minecraft:river": "2025-06-25 22:25:13 +0000",
+      "minecraft:stony_shore": "2025-06-27 23:20:13 +0000",
+      "minecraft:snowy_plains": "2025-07-08 21:30:08 +0000",
+      "minecraft:dripstone_caves": "2025-06-26 22:01:38 +0000",
+      "minecraft:snowy_taiga": "2025-07-07 21:13:04 +0000",
+      "minecraft:old_growth_birch_forest": "2025-06-25 23:01:49 +0000",
+      "minecraft:grove": "2025-07-10 01:27:08 +0000",
+      "minecraft:meadow": "2025-06-27 22:31:18 +0000",
       "minecraft:plains": "2025-06-25 22:12:55 +0000"
     },
     "done": false
@@ -519,16 +521,22 @@
       "minecraft:skeleton": "2025-06-25 22:53:28 +0000",
       "minecraft:phantom": "2025-06-26 23:25:08 +0000",
       "minecraft:zombified_piglin": "2025-07-09 00:30:25 +0000",
+      "minecraft:witch": "2025-07-09 23:47:47 +0000",
+      "minecraft:ravager": "2025-07-09 23:50:49 +0000",
       "minecraft:ghast": "2025-07-02 22:42:25 +0000",
       "minecraft:ender_dragon": "2025-07-08 21:50:44 +0000",
       "minecraft:shulker": "2025-07-08 22:10:00 +0000",
       "minecraft:piglin": "2025-07-09 14:40:02 +0000",
+      "minecraft:vindicator": "2025-07-09 23:45:44 +0000",
       "minecraft:enderman": "2025-07-08 22:00:39 +0000",
       "minecraft:magma_cube": "2025-07-02 22:41:01 +0000",
       "minecraft:endermite": "2025-07-09 13:02:10 +0000",
       "minecraft:spider": "2025-06-26 21:18:34 +0000",
+      "minecraft:vex": "2025-07-09 23:49:03 +0000",
       "minecraft:zombie": "2025-06-25 22:21:49 +0000",
-      "minecraft:creeper": "2025-06-26 00:28:58 +0000"
+      "minecraft:creeper": "2025-06-26 00:28:58 +0000",
+      "minecraft:drowned": "2025-07-10 00:42:54 +0000",
+      "minecraft:zombie_villager": "2025-07-10 11:23:59 +0000"
     },
     "done": false
   },
@@ -7282,6 +7290,18 @@
   "minecraft:nether/find_bastion": {
     "criteria": {
       "bastion": "2025-07-09 14:39:52 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/obtain_ancient_debris": {
+    "criteria": {
+      "ancient_debris": "2025-07-09 21:35:57 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/hero_of_the_village": {
+    "criteria": {
+      "hero_of_the_village": "2025-07-09 23:51:17 +0000"
     },
     "done": true
   },
